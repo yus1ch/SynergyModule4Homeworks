@@ -1,0 +1,59 @@
+html {
+    /* Внешний отступ */
+    margin: 0;
+    /* Внутренний отступ */
+    padding: 0;
+
+}
+
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 60px;
+    background: linear-gradient(45deg, #eeff00 33%, #8d0dbc 66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 40px;
+}
+
+.gray {
+    color: rgb(152, 152, 152);
+}
+
+
+.logo {
+    width: 20%;
+    height: 20%;
+    display: block;
+    margin: auto;
+    pointer-events: none;
+}
+
+@-webkit-keyframes rotating {
+    from {
+        -webkit-transform: rotate(360deg);
+    }
+
+    to {
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+
+.loading-logo {
+    width: 21%;
+    height: 21%;
+    display: block;
+    margin: auto;
+    -webkit-animation: rotating 3s ease infinite;
+    /*Анимация вращения*/
+    pointer-events: none;
+    /*Отключить взаимодействия*/
+}
